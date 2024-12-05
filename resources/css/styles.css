@@ -1,0 +1,345 @@
+body {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #e8e8e8;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    padding: 20px 5%;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-logo {
+    height: 7rem;
+}
+
+.gl-home {
+    height: 20rem;
+}
+
+.cross {
+    height: 2rem;
+    margin: 0 40px 0 33px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff0000;
+}
+
+/*.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../content/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+}*/
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 40px;
+    gap: 3rem;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.primary-button, .secondary-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.secondary-button {
+    background-color: #333;
+    color: #FF0000;
+}
+
+.primary-button:hover {
+    background-color: #FF4848;
+}
+
+.secondary-button:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.button-hollow {
+    appearance: none; /* Removes default button styles */
+    background: transparent; /* Ensure background is transparent */
+    border: solid 3px #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    max-width: 60%;
+    color: #fff; /* Ensure text color is set */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Add a pointer cursor to emphasize button interaction */
+}
+
+.button-hollow:hover {
+    border: solid 3px #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 25px;
+    max-width: 60%;
+    transition: background-color 0.3s ease;
+}
+
+/* Optional: Ensure all buttons using .button-hollow style are fully reset */
+button {
+    all: unset; /* Resets most default button styles */
+    display: inline-block; /* Ensure button behaves as an inline-block element */
+}
+
+.img-title {
+    height: 6rem;
+}
+
+#quote {
+    background-color: #222;
+    padding: 60px 5%;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+#about, #story, #gallery, #contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 5%;
+    background-color: #202020;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    padding-left: 10px;
+}
+
+.social-container {
+    display: flex;
+    gap: 15px;
+}
+
+.social-container a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff; /* Customize as needed */
+    transition: color 0.3s ease;
+}
+
+.social-container a:hover {
+    color: #ff0000; /* Customize hover color */
+}
+
+#message {
+    min-height: 100px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+section {
+    scroll-margin-top: 180px;
+}
+
+button {
+   font-size: 1.2rem; 
+}
+
+section > p {
+    padding: 0 87px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    max-width: 1170px;
+    min-width: 1170px;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    border: none;
+    background-color: #FF0000;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF4848;
+}
+
+footer {
+    text-align: center;
+    background-color: #333333;
+    padding-top: 60px;
+    color: #888;
+    margin-top: 40px;
+}
+
+footer .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+footer .social-container {
+    display: flex;
+    background-color: #121212;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+footer .logo {
+    height: 7rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}

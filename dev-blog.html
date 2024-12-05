@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devblogs - Don't Stop Recording | Desolation Digital</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/devblog-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="resources/content/DSR_Logo500_Transparent.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .devblogs-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12vh 5%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .devblogs-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .devblog-list {
+            max-width: 1400px;
+            display: grid;
+            margin-top: 50px;
+            gap: 40px;
+            grid-template-columns: 1fr;
+        }
+        
+        .devblog-entry {
+            background-color: #202020;
+            padding: 100px 5% 50px 5%;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .devblog-entry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+        
+        .devblog-entry h2 {
+            font-size: 2.2rem;
+            color: #e8e8e8;
+            margin-bottom: 15px;
+        }
+        
+        .devblog-entry .date {
+            font-size: 1rem;
+            color: #bbbbbb;
+            margin-bottom: 20px;
+        }
+        
+        .devblog-entry p {
+            line-height: 1.6;
+            font-size: 1.2rem;
+            color: #d0d0d0;
+        }
+        
+        .devblog-entry img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            /*object-position: 0px -650px;*/
+            border-radius: 10px;
+        }
+        
+        .read-more {
+            width: 10vw;
+            padding: 12px 25px;
+            margin-top: 30px;
+            border: none;
+            background-color: #FF0000;
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .read-more:hover {
+            background-color: #FF4848;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="resources/content/DSR_Logo500_Transparent.png" alt="Don't Stop Recording Game Logo" class="game-logo">
+            <div class="header-links">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#devblogs">Devblogs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="devblogs" class="devblogs-section">
+        <h1>Development Blogs</h1>
+        <p style="margin: 0 340px;">Follow along as we document the journey of developing <strong>Don't Stop Recording</strong>. Our devblogs provide an inside look into the development process, technical insights, design choices, and more.</p>
+        <p style="margin: 20px 340px 0 340px;color: #7f7f7f;font-size: 15px;">NOTE: While we will try to release devblogs bi-weekly, there may be periods where nothing is posted.</p>
+        
+        <div class="devblog-list">
+            <article class="devblog-entry">
+                <img src="blogs/blog1/image.png" alt="Devblog 1 Image">
+                <h2>Devblog #1: Introducing Don't Stop Recording</h2>
+                <p class="date">Published on: December 15, 2024</p>
+                <p>We begin our journey into the depths of the backrooms, outlining the initial inspiration behind the concept of <strong>Don't Stop Recording</strong> and the core mechanics we want to explore...</p>
+                <a href="blogs/blog1/blog1.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="devblog-entry">
+                <img src="blogs/blog2/image.png" alt="Devblog 2 Image">
+                <h2>Devblog #2: Crafting the Atmosphere</h2>
+                <p class="date">Published on: March 15, 2024</p>
+                <p>Atmosphere is key to any horror experience. Here we share our approach to creating a tense, unnerving environment, from sound design to lighting techniques...</p>
+                <a href="devblogs/devblog2.html" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="logo-container">
+            <a href="#"><img src="resources/content/DSR_Logo500_Transparent.png" alt="Desolation Digital Logo" class="logo"></a>
+            <img src="resources/content/cross.png" alt="Desolation Digital Logo" class="cross">
+            <a href="https://www.desolationdigital.com" target="_blank"><img src="resources/content/deso.png" alt="Desolation Digital Logo" class="logo"></a>
+        </div>
+        <div class="social-container">
+            <p>&copy; 2024 Desolation Digital. All Rights Reserved.</p>
+            <div>
+                <a class="social-icons" href="https://www.instagram.com/desolationdigital" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-icons" href="https://www.x.com/@desolationdgtl" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="social-icons" href="https://www.discord.com" target="_blank" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a class="social-icons" href="https://www.youtube.com/@desolationdigital" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
