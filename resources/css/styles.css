@@ -22,6 +22,8 @@ header {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
 }
 
+/* General/Home Styles */
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -239,6 +241,89 @@ button {
     min-height: 100px;
 }
 
+/* Devblogs Page Styles */
+.devblogs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.devblogs-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.devblog-list {
+    max-width: 1400px;
+    display: grid;
+    margin-top: 50px;
+    gap: 40px;
+    grid-template-columns: 1fr;
+}
+
+.devblog-entry {
+    background-color: #202020;
+    padding: 100px 5% 50px 5%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devblog-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.devblog-entry h2 {
+    font-size: 2.2rem;
+    color: #e8e8e8;
+    margin-bottom: 15px;
+}
+
+.devblog-entry .date {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.devblog-entry p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #d0d0d0;
+}
+
+.devblog-entry img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /*object-position: 0px -650px;*/
+    border-radius: 10px;
+}
+
+.read-more {
+    width: 10vw;
+    padding: 12px 25px;
+    margin-top: 30px;
+    border: none;
+    background-color: #FF0000;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-more:hover {
+    background-color: #FF4848;
+    transform: scale(1.05);
+}
+
+/* Body Styles */
+
 h2 {
     font-size: 2.5rem;
     font-weight: 400;
@@ -341,5 +426,138 @@ footer .logo {
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    input, textarea {
+        display: inline-flex;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #333;
+        max-width: 82vw;
+        min-width: 82vw;
+        color: #e0e0e0;
+        font-size: 1rem;
+    }
+
+    .img-title {
+        height: 3rem;
+    }
+
+    section > p {
+        padding: 0 10px;
+        margin: 0 10px !important;
+    }
+
+    .gl-home {
+        height: 12rem;
+    }
+
+    .game-logo {
+        height: 4rem;
+    }
+
+    footer .logo {
+        height: 4rem;
+    }
+
+    #about, #story, #gallery, #contact {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 5%;
+        background-color: #202020;
+        border-radius: 0;
+        margin-bottom: 40px;
+    }
+
+    button[type="submit"] {
+        padding: 15px;
+        border: none;
+        background-color: #FF0000;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 82vw;
+        transition: background-color 0.3s ease;
+    }
+
+    footer .social-container {
+        display: flex;
+        background-color: #121212;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 5%;
+        flex-direction: column-reverse;
+    }
+
+    .button-hollow {
+        appearance: none;
+        background: transparent;
+        border: solid 3px #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        max-width: 80%;
+        color: #fff;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .devblogs-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .devblog-entry {
+        background-color: #202020;
+        padding: 5%;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .read-more {
+        width: 50vw;
+        padding: 12px 25px;
+        margin-top: 30px;
+        border: none;
+        background-color: #FF0000;
+        font-size: 1.2rem;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .devblog-entry img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        /* object-position: 0px -650px; */
+        border-radius: 10px;
+    }
+
+    .devblog-entry h2 {
+        font-size: 1.5rem;
+        color: #e8e8e8;
+        margin-bottom: 15px;
+    }
+
+    .devblog-entry p {
+        line-height: 1.6;
+        font-size: 1.0rem;
+        color: #d0d0d0;
     }
 }
