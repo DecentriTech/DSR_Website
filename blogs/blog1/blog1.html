@@ -62,6 +62,7 @@
         
         .devblogs-intro h1 {
             font-size: 3.5rem;
+            font-weight: normal;
             margin-top: 0px;
             margin-bottom: 30px;
             color: #ffffff;
@@ -70,7 +71,7 @@
         }
         
         .devblogs-intro p {
-            margin: 0 20%;
+            margin: 0 25%;
             color: #ffffff;
             font-size: 1.2rem;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -92,7 +93,16 @@
         }
         
         .devblog-entry h2 {
+            text-align: left;
             font-size: 2.2rem;
+            color: #e8e8e8;
+            margin-bottom: 15px;
+        }
+
+        .devblog-entry h3 {
+            text-align: left;
+            font-size: 1.6rem;
+            font-weight: normal;
             color: #e8e8e8;
             margin-bottom: 15px;
         }
@@ -104,6 +114,7 @@
         }
         
         .devblog-entry p {
+            text-align: left;
             line-height: 1.6;
             font-size: 1.2rem;
             color: #d0d0d0;
@@ -135,6 +146,17 @@
             background-color: #FF4848;
             transform: scale(1.05);
         }
+
+        .entryheading {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+
+        .entryheading p {
+            margin-left: 20px;
+            margin-bottom: 21px;
+        }
     </style>
 </head>
 <body>
@@ -154,7 +176,7 @@
     <section id="devblogs" class="devblogs-section">
         <div class="devblogs-intro">
             <h1>Development Blog #1</h1>
-            <p style="margin: 30px 0;color: #BBBBBB;font-size: 15px;">Published on: December 15, 2024</p>
+            <p style="margin: 30px 0;color: #BBBBBB;font-size: 15px;">Posted by Noah, Logan on 12/15/2024 </p>
             <p>Welcome to our very first development blog for <strong>Don't Stop Recording</strong>. This is the beginning of a journey where we will dive deep into our process, share our progress, and give you insights into what we're working on. In this devblog, we'll introduce the overall concept, initial inspirations, and the features we're most excited about.</p>
         </div>
 
@@ -162,29 +184,65 @@
             <!-- Placeholder Image Section -->
             <article class="devblog-entry">
                 <img src="image.png" alt="Placeholder for project introduction">
-                <h2>Project Introduction</h2>
-                <p>Don't Stop Recording is a multiplayer survival horror game set in the eerie backrooms. The game combines elements of suspense, teamwork, and documentation, focusing on a unique gameplay experience where the players must collect data and survive with limited resources.</p>
+                <div class="entryheading">
+                    <h2>Project Introduction</h2>
+                    <p>by Noah, Logan</p>
+                </div>
+                <p>Don't Stop Recording is a multiplayer survival horror game set in the backrooms. The game combines elements of suspense, teamwork, and documentation, focusing on a unique gameplay experience where the players must collect data and survive with limited resources.</p>
+
+                <h3>Back Story</h3>
+
+                <p>Time: 1955<br><br>
+
+Location: Unknown, US.<br><br>
+
+You are a member of the Active Anomalous Research Group (A.A.R.G), established in 1955 by the United States government following a groundbreaking discovery by scientists in 1951. These scientists uncovered the existence of the backrooms while conducting highly confidential research into inter-dimensional portals on behalf of a deep black project run by the CIA.<br><br>
+
+Previous endeavors to explore and document the various levels of the backrooms proved to be substantial failures, largely due to the unsuitability of military personnel for these missions.<br><br>
+
+Consequently, the Active Anomalous Research Group was formed, comprising a team of exceptionally intelligent and rigorously trained specialists. Your sole objective is to systematically gather and record comprehensive data across all levels of the backrooms.<br><br>
+
+Your directive is clear: <strong>DO NOT STOP RECORDING.</strong></p>
             </article>
 
             <!-- Core Mechanics Section -->
             <article class="devblog-entry">
                 <img src="devphotos/cm1.png" alt="Placeholder for core mechanics">
-                <h2>Core Mechanics</h2>
+                <div class="entryheading">
+                    <h2>Core Mechanics</h2>
+                    <p>by Logan</p>
+                </div>
                 <p>The core mechanics revolve around using a vintage camera to document everything you encounter. Players need to carefully manage their camera's memory while navigating dangerous environments, documenting crucial events, and completing objectives as part of their mission.</p>
+                <h3>Player Tools & Challenges</h3>
+                <p>Players have a limited set of tools at their disposal: a vintage camera, a flashlight, and a basic watch. The watch provides crucial information, such as the current time, stamina, and health status, but players must balance usage to avoid straining resources. Memory management is a significant challenge—players need to decide when it's essential to record, as the camera has limited storage. This management element adds pressure and heightens the horror experience.</p>
+                <h3>Shift System & Teamwork</h3>
+                <p>Work shifts run from 9 am to 5 pm, with players having a one-hour overtime window before they risk getting stranded in the backrooms. Teamwork is critical; players must share responsibilities, such as taking readings, maintaining equipment, or serving as a lookout. If a player fails in their duty, the whole group might face consequences, adding tension to each shift.</p>
             </article>
 
             <!-- Visual & Audio Design Section -->
             <article class="devblog-entry">
                 <img src="devphotos/vne1.png" alt="Placeholder for visual and audio design">
-                <h2>Visual & Audio Design</h2>
+                <div class="entryheading">
+                    <h2>Visual & Audio Design</h2>
+                    <p>by Noah</p>
+                </div>
                 <p>Creating an eerie and immersive atmosphere is one of our primary goals. We're working on distinctive visual styles that complement the horror elements of the game, and the audio design aims to heighten tension with subtle environmental cues and sound effects.</p>
+                <h3>Lighting & Visual Aesthetics</h3>
+                <p>We utilize dynamic lighting that reacts to player actions, which helps in building suspense. The game incorporates dim, flickering lights and unexpected blackouts to keep players on edge. We’re also experimenting with a dithering shader to simulate different levels of sanity—the more stressed the character, the more erratic the visuals become, adding another layer of immersion.</p>
+                <h3>Soundscapes & Fear Dynamics</h3>
+                <p>Sound plays an essential role in amplifying the horror experience. We use spatial audio techniques to ensure that every creak, distant wail, or approaching footstep feels real. The ambient score is minimal but strikes during key moments to elevate suspense. Players are encouraged to listen carefully for audio cues that might signal hidden dangers, making the sound a survival tool as much as it is an atmospheric component.</p>
             </article>
 
             <!-- What's Next Section -->
             <article class="devblog-entry">
                 <img src="devphotos/wn1.png" alt="Placeholder for what's next">
-                <h2>What's Next?</h2>
+                <div class="entryheading">
+                    <h2>What's Next?</h2>
+                    <p>by Noah, Logan</p>
+                </div>
                 <p>Moving forward, we are focusing on prototyping additional features, finalizing the gameplay loop, and refining the overall player experience. Stay tuned for more updates in future devblogs, and feel free to share your thoughts with us!</p>
+                <h3>Upcoming Features & Testing</h3>
+                <p>We plan to introduce new anomalies that change how players approach tasks in the backrooms. Our immediate focus is on building different level types—each with distinct environments and challenges. We’re also working on introducing a player progression system where players can unlock new tools and upgrades that make surviving the backrooms slightly more manageable. Closed alpha testing will start soon, and we’re excited to gather player feedback to improve the game.</p>
             </article>
         </div>
     </section>
